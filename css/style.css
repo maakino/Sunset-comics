@@ -1,0 +1,41 @@
+/*--------------Partie PC---------------*/
+
+/*----------La Barre de navigation----------*/
+
+.navbar{
+    border: solid red;
+    width: 1512px;
+    height: 100px;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+    position: fixed;
+}
+
+.logo{
+    border: solid red;
+    width: 79.9px;
+    height: 79.9px;
+}
+
+.menu{
+    border: solid red;
+    width: 781px;
+    height: 64px;
+}
+
+.icon{
+    border: solid red;
+    width: 198px;
+    height: 45px;
+}
+
+/*----------Le contenue principale----------*/
+
+.carousel{
+    border: solid red;
+    width: 1512px;
+    height: 625px;
+}
