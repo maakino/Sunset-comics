@@ -1,32 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Sunset Cosmics</title>
-</head>
-<body>
+    <script src="js/script.js"></script>
+    <title>Ster</title>
+  </head>
+  <body>
     <header>
-        <div class="header-mobile">
-            <div class="nav-main-mobile">
-                <img class="logo-mobile" src="pic/mobile/navbar/logo.png" alt="">
-                <span>
-                    <img src="pic/mobile/navbar/search.png" alt="">
-                    <img class="burger" src="pic/mobile/navbar/hamburger.png" alt="">
-                </span>
-            </div>  
-            <nav class="nav-mobile">
-                <ul class="nav-menu-mobile">
-                    <li><a class="nav-menu-content" href=""><img src="pic/mobile/navbar/pages/home.png" alt="">Accueil</a></li>
-                    <li><a class="nav-menu-content" href=""><img src="pic/mobile/navbar/pages/news.png" alt="">Nouveautés</a></li>
-                    <li><a class="nav-menu-content" href=""><img src="pic/mobile/navbar/pages/catalogue.png" alt="">Catalogue</a></li>
-                    <li><a class="nav-menu-content" href=""><img src="pic/mobile/navbar/pages/contact.png" alt="">Contact</a></li>
-                    <li><a class="nav-menu-content" href=""><img src="pic/mobile/navbar/pages/shopping_cart.png" alt="">Panier</a></li>
-                    <li><a class="nav-menu-content" href=""><img src="pic/mobile/navbar/pages/user.png" alt="">Mon compte</a></li>
-                </ul>
-            </nav>
+
+      <div class="headerMobile ">
+        <div class="headerMobile__top">
+            <a href="#">
+                <img src="img/logo.png" alt="" />
+            </a>
+          <span>
+            <img src="img/search.png" alt="" />
+            <img id="burger" src="img/hamburger.png"  />
+          </span>
         </div>
+
+        <nav id="navMobile" class="headerMobile__nav">
+          <ul class="headerMobile__navBlock">
+            <li class="headerMobile__navBlock-item">
+              <a href="#">
+                <img src="img/pages/home.png" alt="" />
+                Accueil
+              </a>
+            </li>
+            <li class="headerMobile__navBlock-item">
+              <a href="#">
+                <img src="img/pages/news.png" alt="" />
+                Nouveautés
+              </a>
+            </li>
+            <li class="headerMobile__navBlock-item">
+              <a href="#">
+                <img src="img/pages/catalogue.png" alt="" />
+                Catalogue
+              </a>
+            </li>
+            <li class="headerMobile__navBlock-item">
+              <a href="#">
+                <img src="img/pages/contact.png" alt="" />
+                contact
+              </a>
+            </li>
+            <li class="headerMobile__navBlock-item">
+              <a href="#">
+                <img src="img/pages/shopping_cart.png" alt="" />
+                panier
+              </a>
+            </li class="headerMobile__navBlock-item">
+            <li class="headerMobile__navBlock-item">
+              <a href="#">
+                <img src="img/pages/user.png" alt="" />
+                Mon compte
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="headerPc max-w">
+<a href="#">
+    <img src="img/logo.png" alt="" />
+
+</a>
+
+        <nav class="headerPc__nav">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Nouveautés</a></li>
+                <li><a href="#">Catalogue</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+
+        <span>
+            <img src="img/search.png" alt="" style="cursor: pointer;"/>
+            <a href="#">
+                <img src="img/pages/shopping_cart.png" alt="" />
+            </a>
+            <a href="#">
+                <img src="img/pages/user.png" alt="" />
+
+            </a>
+        </span>
+
+      </div>
+
     </header>
-</body>
+    <main class="max-w">
+        <section>
+           <h1>Bonne journée</h1>
+        </section>
+    </main>
+  </body>
 </html>
