@@ -1,0 +1,23 @@
+@media screen and (min-width: 992px) {
+    .headerMobile {
+      display: none;
+    }
+    .headerPc{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem 0;
+    }
+    .headerPc__nav ul{
+      display: flex;
+      flex-direction: row;
+      gap: 10.5rem;
+    }
+    .headerPc span{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.5rem;
+    }
+  }
