@@ -1,5 +1,126 @@
-/*  Variables Css */
---bkg-primary-color:;
---bkg-secondary-color:;
---btn-primary-color:;
---btn-secondary-color:;
+/*----------Variables Css----------*/
+*{
+    --bkg-primary-color:#FFFDFA;
+    --bkg-secondary-color:#0E5DA3;
+    --bkg-terciary-color: #222323;
+    --bkg-terciarytwo-color: #2223237e;
+    --bkg-other-color: #E0E0E0;
+    --btn-primary-color:#EE9711;
+    --important-color:#EB5757;
+    --other-color:#27AE60;
+}
+
+/*----------Police D'Ecriture----------*/
+
+@font-face {
+    font-family: 'montserrat-extrabold';
+    src: url("../font/montserrat/Montserrat-ExtraBold.ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'montserrat-semibold';
+    src: url("../font/montserrat/Montserrat-SemiBold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'montserrat-mediumitalic';
+    src: url("../font/montserrat/Montserrat-MediumItalic.ttf");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'montserrat-regular';
+    src: url("../font/montserrat/Montserrat-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'montserrat-lightitalic';
+    src: url("../font/montserrat/Montserrat-LightItalic.ttf");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url("../font/montserrat/Montserrat-Bold.ttf");
+    font-weight: 900;
+}
+
+/*----------Body Html----------*/
+
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*---------------PARTIE MOBILE---------------*/
+
+/*-----La Barre de navigation-----*/
+
+header{
+    width: 100vw;
+    min-height: 75px;
+    border-radius: 0px 0px 9px 9px;
+}
+
+.header-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-mobile{
+    width: 60px;
+    height: 60px;
+}
+
+.nav-main-mobile{
+    background-color: var(--bkg-terciary-color);
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.nav-main-mobile span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+}
+
+.nav-mobile{
+    font-family: 'montserrat-regular';
+    width: 100%;
+}
+
+.nav-menu-mobile{
+    display: flex;
+    flex-direction: column;
+
+}
+
+li{
+    list-style-type: none;
+}
+
+.nav-menu-content{
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+a{
+    color: var(--btn-primary-color);
+}
