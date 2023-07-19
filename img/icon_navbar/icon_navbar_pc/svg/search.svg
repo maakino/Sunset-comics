@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="46"
+   height="45"
+   viewBox="0 0 46 45"
+   fill="none"
+   version="1.1"
+   id="svg16"
+   sodipodi:docname="Frame 2.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="18.422222"
+     inkscape:cx="23.015682"
+     inkscape:cy="22.472859"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg16" />
+  <g
+     clip-path="url(#clip0_1020_11634)"
+     id="g6"
+     style="fill:#ffffff">
+    <g
+       clip-path="url(#clip1_1020_11634)"
+       id="g4"
+       style="fill:#ffffff">
+      <path
+         d="M29.4408 25.8679H28.0858L27.6055 25.4048C29.2865 23.4494 30.2985 20.9108 30.2985 18.1492C30.2985 11.9914 25.307 7 19.1492 7C12.9914 7 8 11.9914 8 18.1492C8 24.307 12.9914 29.2985 19.1492 29.2985C21.9108 29.2985 24.4494 28.2865 26.4048 26.6055L26.8679 27.0858V28.4408L35.4443 37L38 34.4443L29.4408 25.8679ZM19.1492 25.8679C14.8782 25.8679 11.4305 22.4202 11.4305 18.1492C11.4305 13.8782 14.8782 10.4305 19.1492 10.4305C23.4202 10.4305 26.8679 13.8782 26.8679 18.1492C26.8679 22.4202 23.4202 25.8679 19.1492 25.8679Z"
+         fill="#ED9613"
+         id="path2"
+         style="fill:#ffffff" />
+    </g>
+  </g>
+  <defs
+     id="defs14">
+    <clipPath
+       id="clip0_1020_11634">
+      <rect
+         width="46"
+         height="45"
+         rx="22.5"
+         fill="white"
+         id="rect8" />
+    </clipPath>
+    <clipPath
+       id="clip1_1020_11634">
+      <rect
+         width="52"
+         height="52"
+         fill="white"
+         transform="translate(-3 -3.5)"
+         id="rect11" />
+    </clipPath>
+  </defs>
+</svg>

@@ -1,7 +1,12 @@
+/* ----------LE RESPONSIVE---------- */
+
 @media screen and (min-width: 992px) {
+
+  /* -----Désactivation du header Mobile----- */
     .headerMobile {
       display: none;
     }
+    /* ----------HEADER PC---------- */
     .headerPc{
       display: flex;
       flex-direction: row;
@@ -9,15 +14,37 @@
       align-items: center;
       padding: 1rem 0;
     }
+
     .headerPc__nav ul{
       display: flex;
       flex-direction: row;
       gap: 10.5rem;
     }
+
     .headerPc span{
       display: flex;
       flex-direction: row;
       align-items: center;
       gap: 1.5rem;
     }
+      /* ----------PARTIE PRINCIPALE */
+    .news__img,
+    .catalog__img{
+        border: solid var(--bkg-secondary-color) 5px;
+        border-radius: 25px;
+        width: 303px;
+        height: auto;
+        animation: transition 2s ease-in;
+    }
+
+
+
+
+
   }
+  .news__img:hover{
+    transform: scale(1.1);
+  }
+
+
+

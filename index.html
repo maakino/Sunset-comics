@@ -1,101 +1,206 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-    <title>Ster</title>
-  </head>
-  <body>
-    <header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- BOOTSTRAP CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="img/favicon/Favicon.png" type="image/x-icon">
+        <!-- SCRIPT JS -->
+        <script src="js/script.js"></script>
+        <!-- TITRE DE LA PAGE -->
+        <title>Sunset Comics</title>
+    </head>
+    <body>
+        <!-- LE HEADER -->
+        <header>
+        <!-- LE HEADER DU MOBILE -->
+            <div class="headerMobile ">
+                <div class="headerMobile__top">
+                    <a href="#" title="Retour à l'accueil">
+                        <img title="Images qui mene vers la page d'accueil" src="img/icon_navbar/icon_navbar_mobile/logo.png" alt="" />
+                    </a>
+                <span>
+                    <img title="Image qui ouvre la barre de recherche" src="img/icon_navbar/icon_navbar_mobile/search.png" alt="" />
+                    <img title="Image que ouvre le menu burger" src="img/icon_navbar/icon_navbar_mobile/hamburger.png" alt="" />
+                </span>
+                </div>
+                <!-- LA BARRE DE NAVIGATON -->
+                <nav id="navMobile" class="headerMobile__nav">
+                <ul class="headerMobile__navBlock">
+                    <li class="headerMobile__navBlock-item">
+                    <a href="#">
+                        <img title="Images qui mene vers la page d'accueil" src="img/icon_navbar/icon_navbar_mobile/home.png" alt="" />
+                        Accueil
+                    </a>
+                    </li>
+                    <li class="headerMobile__navBlock-item">
+                    <a href="#">
+                        <img title="Images qui mene vers la page nouveautés" src="img/icon_navbar/icon_navbar_mobile/news.png" alt="" />
+                        Nouveautés
+                    </a>
+                    </li>
+                    <li class="headerMobile__navBlock-item">
+                        <a href="#">
+                            <img title="Images qui mene vers la page d'accueil catalogue" src="img/icon_navbar/icon_navbar_mobile/catalogue.png" alt="" />
+                            Catalogue
+                        </a>
+                    </li>
+                    <li class="headerMobile__navBlock-item">
+                        <a href="#">
+                            <img title="Images qui mene vers la page d'accueil contact" src="img/icon_navbar/icon_navbar_mobile/contact.png" alt="" />
+                            Contact
+                        </a>
+                    </li>
+                    <li class="headerMobile__navBlock-item">
+                        <a href="#">
+                            <img title="Images qui mene vers la page d'accueil page panier" src="img/icon_navbar/icon_navbar_mobile/shopping_cart.png" alt="" />
+                            Panier
+                        </a>
+                    </li class="headerMobile__navBlock-item">
+                    <li class="headerMobile__navBlock-item">
+                        <a href="#">
+                            <img title="Images qui mene vers la page d'accueil mon compte" src="img/icon_navbar/icon_navbar_mobile/user.png" alt="" />
+                            Mon compte
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+            <!-- LE HEADER DU PC -->
+            <div class="headerPc max-w">
+                <a href="#">
+                    <img title="Images qui mene vers la page d'accueil" src="img/icon_navbar/icon_navbar_mobile/logo.png" alt="" />
+                </a>
+                <nav class="headerPc__nav">
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Nouveautés</a></li>
+                        <li><a href="#">Catalogue</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+                <!-- LES ICONES HEADER PC -->
+                <span>
+                    <img title="Images qui ouvre la barre de recherche" class="headerPC_search" src="img/icon_navbar/icon_navbar_pc/svg/search.svg" alt="" style="cursor: pointer;"/>
+                    <a href="#">
+                        <img title="Images qui mene vers la page panier" class="headerPC_shoppingCart" src="img/icon_navbar/icon_navbar_pc/svg/shopping_cart.svg" alt="" />
+                    </a>
+                    <a href="#">
+                        <img title="Images qui mene vers la page mon compte" class="headerPc_user" src="img/icon_navbar/icon_navbar_pc/svg/user.svg" alt="" />
+                    </a>
+                </span>
+            </div>
+        </header>
+        <!-- LE CONTENUE PRINCIPALE -->
+        <main class="max-w">
+            <!-- LA SECTION CAROUSEL -->
+            <section>
+                <!-- CAROUSEL BOOTSTRAP -->
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="3000" data-wrap="tr">
+                    <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/carousel/Carousel_1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/carousel/Carousel_2.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/carousel/Carousel_3.jpg" alt="Third slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/carousel/Carousel_4.jpg" alt="Fourth slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/carousel/Carousel_5.jpg" alt="Fifth slide">
+                            </div>
+                    </div>
+                </div>
+            </section>
+            <!-- LA SECTION NOUVEAUTES & CATALOGUE -->
+            <section>
+                <h1>Article</h1>
+                <h2>Nouveautés</h2>
+                <div class="news">
+                    <a href="">
+                        <img class="news__img" src="img/cover/cover_pc/Saga_Vol.10.jpg" alt="">
+                        <h3>Saga Vol.10</h3>
+                    </a>
+                    <a href="">
+                        <img class="news__img" src="img/cover/cover_pc/Nowhere_Man.jpg" alt="">
+                        <h3>Nowhere Men</h3>
+                    </a>
+                    <a href="">
+                        <img class="news__img" src="img/cover/cover_pc/Oblivion_Song.jpg" alt="">
+                        <h3>Oblivion Song</h3>
+                    </a>
+                    <a href="">
+                        <img class="news__img" src="img/cover/cover_pc/Red_Sonja.jpg" alt="">
+                        <h3>Red Sonja</h3>
+                    </a>
+                </div>
+                <h2>Catalogue</h2>
+                <div class="catalog">
+                    <a href="">
+                        <img class="catalog__img" src="img/cover/cover_pc/Criminal.jpg" alt="" width="">
+                        <h3>Criminal</h3>
+                    </a>
+                    <a href="">
+                        <img class="catalog__img" src="img/cover/cover_pc/Saga_Vol.1.jpg" alt="">
+                        <h3>Saga Vol.1</h3>
+                    </a>
+                    <a href="">
+                        <img class="catalog__img" src="img/cover/cover_pc/Spawn_Origins.jpg" alt="">
+                        <h3>Spawn Origins Vol.1</h3>
+                    </a>
+                    <a href="">
+                        <img class="catalog__img" src="img/cover/cover_pc/Undiscovered_Country.jpg" alt="">
+                        <h3>Undiscovered Country</h3>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer__Block">
+                    <div class="footer__logoBlock">
+                        <a class="footer__logoBlock-item" href="">
+                            <img title="Images qui mene vers la page d'accueil" src="img/footer/footer_mobile/logo_footer.png" alt="">
+                        </a>
+                    </div>
+                    <a href="">
 
-      <div class="headerMobile ">
-        <div class="headerMobile__top">
-            <a href="#">
-                <img src="img/logo.png" alt="" />
-            </a>
-          <span>
-            <img src="img/search.png" alt="" />
-            <img id="burger" src="img/hamburger.png"  />
-          </span>
-        </div>
-
-        <nav id="navMobile" class="headerMobile__nav">
-          <ul class="headerMobile__navBlock">
-            <li class="headerMobile__navBlock-item">
-              <a href="#">
-                <img src="img/pages/home.png" alt="" />
-                Accueil
-              </a>
-            </li>
-            <li class="headerMobile__navBlock-item">
-              <a href="#">
-                <img src="img/pages/news.png" alt="" />
-                Nouveautés
-              </a>
-            </li>
-            <li class="headerMobile__navBlock-item">
-              <a href="#">
-                <img src="img/pages/catalogue.png" alt="" />
-                Catalogue
-              </a>
-            </li>
-            <li class="headerMobile__navBlock-item">
-              <a href="#">
-                <img src="img/pages/contact.png" alt="" />
-                contact
-              </a>
-            </li>
-            <li class="headerMobile__navBlock-item">
-              <a href="#">
-                <img src="img/pages/shopping_cart.png" alt="" />
-                panier
-              </a>
-            </li class="headerMobile__navBlock-item">
-            <li class="headerMobile__navBlock-item">
-              <a href="#">
-                <img src="img/pages/user.png" alt="" />
-                Mon compte
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="headerPc max-w">
-<a href="#">
-    <img src="img/logo.png" alt="" />
-
-</a>
-
-        <nav class="headerPc__nav">
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Nouveautés</a></li>
-                <li><a href="#">Catalogue</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </nav>
-
-        <span>
-            <img src="img/search.png" alt="" style="cursor: pointer;"/>
-            <a href="#">
-                <img src="img/pages/shopping_cart.png" alt="" />
-            </a>
-            <a href="#">
-                <img src="img/pages/user.png" alt="" />
-
-            </a>
-        </span>
-
-      </div>
-
-    </header>
-    <main class="max-w">
-        <section>
-           <h1>Bonne journée</h1>
-        </section>
-    </main>
-  </body>
+                    </a>
+                    <ul class="footer__linkBlock">
+                        <li class="linkBlock-item">Accueil</li>
+                        <li class="linkBlock-item">Nouveautés</li>
+                        <li class="linkBlock-item">Catalogue</li>
+                        <li class="linkBlock-item">Contact</li>
+                    </ul>
+                    <span class="footer___socialBlock">
+                        <a class="footer___socialBlock" href="">
+                            <img title="" src="" alt="">
+                        </a>
+                        <a class="footer___socialBlock-link" href="">
+                            <img title="" src="" alt="">
+                        </a>
+                        <a class="footer___socialBlock-link" href="">
+                            <img title="" src="" alt="">
+                        </a>
+                    </span>
+                    <p class="footer__legalBlock">Mentions Légales</p>
+                    <p class="footer__copyBlock">
+                        Copyright &copy; Sunset Comics. Tout Droit Réservé. 2023
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- SCRIPT BOOTSTRAP -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
 </html>

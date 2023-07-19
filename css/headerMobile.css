@@ -1,15 +1,22 @@
+/* ----------HEADER---------- */
+
 .headerPc {
   display: none;
 }
+
+/* -----HADER MOBILE----- */
+
 .headerMobile__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px 25px;
 }
+
 .headerMobile__nav {
     animation: 2s closeNav forwards;
 }
+
 .headerMobile__navBlock {
   padding: 25px;
   display: flex;
@@ -27,12 +34,18 @@
   align-items: center;
   gap: 10px;
 }
-/*  */
+
+/* ----- ANNIMATION DU HEADER ----- */
+
+/* --- ACTIVATION DU MENU --- */
+
 .active {
   animation: 1s openNav;
   display: flex;
 }
-/* Annimation */
+
+/* --- OUVERTURE DU MENU --- */
+
 @keyframes openNav {
   0% {
     opacity: 0;
@@ -50,6 +63,8 @@
   }
 }
 
+/* ---FERMETURE DU MENU--- */
+
 @keyframes closeNav {
   0% {
     opacity: 1;
@@ -61,6 +76,67 @@
   100% {
     opacity: 0;
     height: 0px;
-   
+
   }
+}
+
+/* ---------- LA SECTION NOUVEAUTES & CATALOGUE---------- */
+
+h1{
+  margin-top: 20px;
+}
+
+h1{
+  font-family: montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--bkg-secondary-color);
+}
+
+.news,
+.catalog{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.news__img,
+.catalog__img{
+  border: solid var(--bkg-secondary-color) 3px;
+  border-radius: 10px;
+  width: 185px;
+  height: auto;
+
+}
+
+
+/* ----------LA PARTIE FOOTER---------- */
+
+.footer,
+.footer__Block,
+.footer__logoBlock,
+.linkBlock-item,
+.footer__legalBlock,
+.footer__copyBlock{
+  margin-top: 10px;
+}
+
+
+.footer{
+  margin-top: 20px;
+  width: 100vw;
+  height: 551.65px;
+  background-color: var(--bkg-terciary-color);
+  color: var(--bkg-primary-color);
+}
+
+.footer__Block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

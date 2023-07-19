@@ -1,44 +1,97 @@
+/* ----------IMPORTATIONS DES FICHIER CSS---------- */
+
 @import url("reset.css");
 @import url("headerMobile.css");
 @import url("headerPc.css");
-header {
-}
+
+/*----------Variable Pour Les Couleurs---------*/
+
 * {
-  --bkg-primary-color: #fffdfa;
-  --bkg-secondary-color: #0e5da3;
-  --bkg-terciary-color: #222323;
-  --bkg-terciarytwo-color: #2223237e;
-  --bkg-other-color: #e0e0e0;
-  --btn-primary-color: #ee9711;
-  --important-color: #eb5757;
-  --other-color: #27ae60;
-  text-decoration: none;
-  list-style: none;
+    --svg-two-color: invert(63%) sepia(66%) saturate(1082%) hue-rotate(352deg) brightness(170%) contrast(95%);
+    --bkg-primary-color: #fffdfa;
+    --bkg-secondary-color: #0e5da3;
+    --bkg-terciary-color: #222323;
+    --bkg-terciarytwo-color: #2223237e;
+    --bkg-other-color: #e0e0e0;
+    --btn-primary-color: #ee9711;
+    --important-color: #eb5757;
+    --other-color: #27ae60;
+    text-decoration: none;
+    list-style: none;
 }
+
+@font-face {
+    font-family: montserrat-italic;
+    src: url("/font/montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url("/font/montserrat/Montserrat-VariableFont_wght.ttf");
+    font-display: swap;
+}
+
+/* ----------Taille et marges---------- */
+
 .max-w{
     max-width: 1920px;
     margin: auto;
 }
-main{
-    padding: 50px 50px 0 50px ;
+
+body, htmls {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
 }
-body,
-html {
-  margin: 0;
-  padding: 0;
-}
+
 main{
     z-index: 1000;
 }
-/* Par default header */
+
+/* ----------PARTIE HEADER---------- */
+
 header {
-  background-color: var(--bkg-terciary-color);
+    background-color: var(--bkg-terciary-color);
+    font-size: 20px;
+    font-weight: 600;
 }
 
 header a {
-  color: var(--bkg-primary-color);
-  text-transform: uppercase;
+    color: var(--bkg-primary-color);
+    text-transform: uppercase;
 }
 
+a:hover{
+    text-decoration: none;
+}
 
+/* ----------SVG---------- */
+
+header a:hover{
+    transition: 0.5s;
+    color: var(--btn-primary-color);
+    text-decoration: none;
+}
+
+.headerPC_search{
+    filter: var(--svg-two-color);
+}
+
+.headerPC_search:hover{
+    transition: 0.5s;
+    filter: none;
+}
+
+/* ---HOVER--- */
+
+.headerPC_shoppingCart:hover{
+    filter: var(--svg-two-color);
+}
+
+.headerPc_user:hover{
+    filter: var(--svg-two-color);
+}
+
+/* ----------PARTIE PRINCIPALE---------- */
 
